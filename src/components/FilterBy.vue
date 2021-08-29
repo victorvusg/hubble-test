@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     async select(filterBy) {
-      await this.$store.dispatch('github/getIssues', filterBy);
+      await this.$store.dispatch('github/getIssues', { filterBy });
     },
   },
 }

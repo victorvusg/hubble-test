@@ -65,7 +65,8 @@ export default {
     }
   },
   async created() {
-    await this.$store.dispatch('github/getIssues', 'open');
+    await this.$store.dispatch('github/getIssues', { filterBy: 'open'});
+    this.$store.dispatch('github/getIssues', { filterBy: 'all', isCached: true });
   }
 }
 </script>
