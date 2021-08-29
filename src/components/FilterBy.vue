@@ -2,14 +2,15 @@
   <div class="mt-10">
     <div>Filter by</div>
     <v-select
-        v-model="filterBy"
-        :items="items"
-        label="Select Filter"
-        single-line
-        item-text="label"
-        item-value="value"
-        @change="select"
-      ></v-select>
+      v-model="filterBy"
+      :items="items"
+      label="Select Filter"
+      single-line
+      item-text="label"
+      item-value="value"
+      @change="select"
+    >
+    </v-select>
   </div>
 </template>
 
